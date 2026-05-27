@@ -7,7 +7,6 @@ targeting a distinct physical modality. Total bill of materials under **USD $50*
 Fulbright University Vietnam · 
 
 📄 **[Read the 4-page research summary (PDF)](RESEARCH_SUMMARY.pdf)**
-🖼️ **[Lab setup photos (PDF)](lab_photos.pdf)**
 
 ---
 
