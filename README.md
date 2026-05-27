@@ -62,6 +62,6 @@ hardware components that would constitute such a system.
 
 - Email: `nhu.nguyen.240109@student.fulbright.edu.vn`
 - LinkedIn: `www.linkedin.com/in/qnhuphnguyn`
-- This repo: `(https://github.com/npqnhu135/wearable-sensing-portfolio.git)`
+- This repo: `https://github.com/npqnhu135/wearable-sensing-portfolio.git`
 
 *Last updated: May 2026*
