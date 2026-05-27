@@ -1,0 +1,69 @@
+# Track 3 — ECG Front-End: Documented Failure Mode
+
+An AD8232 single-lead ECG analog front-end was assembled and recorded for
+9.3 minutes. **The acquired signal is not usable for QRS/HR analysis.** This
+folder documents the failure mode and proposes a specific hardware fix.
+
+This negative result is included intentionally — reproducibility in low-resource
+hardware projects requires documenting failure modes, not just successful traces.
+
+## What was attempted
+
+- **Front-end:** AD8232 single-lead ECG analog front-end
+- **ADC:** ESP32-S3, 250 Hz sampling (verified jitter < 1 sample)
+- **Electrodes:** 3× Ag/AgCl gel pads in Lead-I configuration
+- **Recording duration:** 559 seconds (139,766 samples)
+
+## What was observed
+
+**70.1 % of samples sat at one of the two ADC rails (0 or 4095).** Spectral
+inspection of the remaining 30 % revealed a ~30 Hz rail-to-rail oscillation
+consistent with the AD8232 output stage running its internal DC-restoration
+loop against an over-driven input rather than producing a biological signal.
+No QRS complexes, P-waves, or T-waves were recoverable.
+
+![ECG diagnostic](figures/fig_ecg_diagnostic.png)
+
+## Root-cause hypothesis
+
+The most parsimonious explanation:
+
+1. The AD8232 **REF pin was tied to GND** rather than a Vcc/2 voltage divider
+2. Under single-supply 3.3 V operation, skin-electrode DC offsets exceed the
+   amplifier's input common-mode range
+3. The right-leg drive (RLD) circuit alone cannot recover from this
+   configuration; the output saturates at one rail and the internal DC servo
+   bounces it back, causing the observed periodic oscillation
+
+## Proposed fix
+
+The next hardware revision will:
+
+1. Add a Vcc/2 voltage divider with 1 µF decoupling on the REF pin
+2. Verify SDN is pulled high externally rather than left floating
+3. Move from USB-powered (laptop, ground loops) to 9 V battery operation with
+   LM7805-regulated 3.3 V isolated supply for AD8232
+
+## How to reproduce the diagnostic
+
+```bash
+pip install pandas numpy matplotlib
+jupyter lab analysis.ipynb
+```
+
+Run all cells. The figure `figures/fig_ecg_diagnostic.png` is regenerated from
+`data/ecg_raw_250hz.csv`.
+
+## Files
+
+- `analysis.ipynb` — saturation statistics + 3-panel diagnostic plot
+- `data/ecg_raw_250hz.csv` — raw data: `timestamp_us, adc_value, flag`
+- `figures/fig_ecg_diagnostic.png` — 3-panel diagnostic figure
+
+## Why include a failure mode in a portfolio
+
+A clean negative result with root-cause analysis and a specific remediation plan
+is higher information density than a re-recorded "working" trace whose
+provenance is undocumented. PIs evaluating undergraduate research portfolios
+generally prefer scientific honesty over polished outcomes — particularly when
+the failure analysis demonstrates understanding of the underlying circuit.
