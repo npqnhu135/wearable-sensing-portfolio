@@ -10,7 +10,7 @@
 **Author:** Nguyen Phan Quynh Nhu — Human-Centered Engineering, Class of 2028, Fulbright University Vietnam
 **Report date:** May 2026 · **Last updated:** May 2026
 
-📄 **[Read the 6-page research report (PDF)](RESEARCH_SUMMARY.pdf)** · 🖼️ **[Lab setup photo documentation (PDF)](lab_photos.pdf)**
+📄 **[Research Summary (PDF)](RESEARCH_SUMMARY.pdf)**
 
 ---
 
