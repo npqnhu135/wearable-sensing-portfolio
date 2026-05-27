@@ -60,7 +60,7 @@ hardware components that would constitute such a system.
 
 ## Contact
 
-- Email: `nhu.nguyen.240109@student.fulbright.edu.vn`
+- Email: `nhu.nguyen.240109@student.fulbright.edu.vn` | 'npqnhu.work@gmail.com'
 - LinkedIn: `www.linkedin.com/in/qnhuphnguyn`
 - This repo: `https://github.com/npqnhu135/wearable-sensing-portfolio.git`
 
