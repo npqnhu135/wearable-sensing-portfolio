@@ -60,8 +60,8 @@ motivation, methods, preliminary results, and trajectory toward PhD.
 
 ## Contact
 
-- Email: `your_email@fulbright.edu.vn`
-- LinkedIn: [linkedin.com/in/your_handle](https://linkedin.com/in/your_handle)
+- Email: `nhu.nguyen.240109@student.fulbright.edu.vn` or 'npqnhu.work@gmail.com'
+- LinkedIn: www.linkedin.com/in/qnhuphnguyn
 - YouTube demos: [link]
 
 ---
