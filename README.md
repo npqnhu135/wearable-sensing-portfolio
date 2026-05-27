@@ -6,7 +6,7 @@ targeting a distinct physical modality. Total bill of materials under **USD $50*
 **Nguyen Phan Quynh Nhu** · Human-Centered Engineering, Class of 2028
 Fulbright University Vietnam · 
 
-📄 **[Read the 4-page research summary (PDF)](RESEARCH_SUMMARY.pdf)**
+📄 **[Research summary (PDF)](RESEARCH_SUMMARY.pdf)**
 
 ---
 
