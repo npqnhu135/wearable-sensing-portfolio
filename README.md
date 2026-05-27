@@ -23,7 +23,7 @@ Vietnam (Wellcome Trust-funded).
 ### 1. Smart Vibrating Wristband Alarm
 Project Lead, Design System Thinking course (Spring 2026, Prof. Kien Truong).
 TPU/PLA flexible housing for rigid microcontroller, iterated through 12+ prototypes.
-→ [01_smart_vibrating_wristband/](./01_smart_vibrating_wristband/)
+→ [01_smart_vibrating_wristband/]([./https://youtu.be/YNifkIV8jkY?si=EkjkWJSz77MFrWKO/)
 
 ### 2. Thermoelectric Body-Heat Harvesting *(active)*
 Characterizing a TEC1-12706 module operated as a TEG with ESP32-S3 + DS18B20.
