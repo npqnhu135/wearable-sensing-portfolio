@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you reference this portfolio, please cite as below."
+title: "Wearable Sensing Portfolio: A Three-Modality Low-Cost Prototype for Resource-Limited Vital-Sign Monitoring"
+authors:
+  - family-names: "Nguyen"
+    given-names: "Phan Quynh Nhu"
+    affiliation: "Fulbright University Vietnam"
+    email: "nhu.nguyen.240109@student.fulbright.edu.vn"
+version: "1.0.0"
+date-released: "2026-05-27"
+url: "https://github.com/npqnhu135/wearable-sensing-portfolio"
+repository-code: "https://github.com/npqnhu135/wearable-sensing-portfolio"
+license: MIT
+keywords:
+  - wearable sensing
+  - thermoelectric generator
+  - piezoresistive sensor
+  - ECG
+  - reproducible research
+  - undergraduate research
+abstract: >-
+  Three independently characterized wearable-sensing prototypes built without
+  dedicated laboratory access: a TEC1-12706 thermoelectric module (peak ΔT 9.6 °C),
+  a DIY piezoresistive force sensor (222 events detected, 0-777 ADC range),
+  and an AD8232 ECG front-end documented with a 70.1% rail-saturation failure
+  mode and proposed hardware remediation. Total bill of materials under USD $50.
