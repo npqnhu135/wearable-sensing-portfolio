@@ -11,6 +11,7 @@
 **Report date:** May 2026 · **Last updated:** May 2026
 
 📄 **[Research Summary (PDF)](RESEARCH_SUMMARY.pdf)**
+📂 **[Lab setup & full capture photos (Google Drive)](https://drive.google.com/drive/folders/1KDHBZTqG8OIstBDkzPv-oR9viV3r7mc4?usp=drive_link))**
 
 ---
 
